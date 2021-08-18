@@ -1,0 +1,52 @@
+body {
+  background-color: darkblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#anime {
+  background-image: url(girl.jpg);
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  width: 280px;
+  margin: 10px;
+  cursor: pointer;
+  height: 350px;
+  border-radius: 10px;
+}
+img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 260px;
+  margin-top: 10px;
+  height: 300px;
+}
+span {
+  font-size: 30px;
+  height: 55px;
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#score {
+  position: absolute;
+  left: 89%;
+  top: -10px;
+  color: #ecec82;
+}
+h1 {
+  color: #ecec82;
+}
+p {
+  color: #ecec82;
+}
