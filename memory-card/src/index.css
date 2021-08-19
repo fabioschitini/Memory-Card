@@ -50,3 +50,12 @@ h1 {
 p {
   color: #ecec82;
 }
+span {
+  background-color: #244624;
+  border-radius: 9px;
+  height: 40px;
+}
+strong {
+  position: relative;
+  left: 60px;
+}

@@ -13,12 +13,12 @@ let array = originalArray.slice(0)
     
     return array
 }
-  const ref = useRef(null)
+  
   const [score, setScore] = useState(0)
   const [bestScore,setBestScore]=useState([0])
 
   const [cards,setCards]=useState([{
-  id: 'a',
+  id: 'Cross Girl',
   img:'http://img.skenko.com/images/anime/bvybhwbvybhw.jpg',
 },
   {
@@ -122,7 +122,7 @@ console.log(e.path)
 
 </div>
   
-    <div ref={ref} id='container'>
+    <div  id='container'>
       <Cards randon={randonClick} cards={cards }/>
     </div>
     </div>
