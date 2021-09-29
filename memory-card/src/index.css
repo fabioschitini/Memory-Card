@@ -1,5 +1,5 @@
 body {
-  background-color: darkblue;
+  background-color: #6a6a6e;
 }
 
 code {
@@ -16,10 +16,9 @@ code {
 .cards {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: #262e2b;
   width: 280px;
   margin: 10px;
-  cursor: pointer;
   height: 350px;
   border-radius: 10px;
 }
@@ -29,10 +28,12 @@ img {
   width: 260px;
   margin-top: 10px;
   height: 300px;
+  cursor: pointer;
 }
 span {
   font-size: 30px;
   height: 55px;
+  background-color: #000000;
 }
 #container {
   display: flex;
@@ -51,11 +52,12 @@ p {
   color: #ecec82;
 }
 span {
-  background-color: #244624;
+  background-color: #333c33;
   border-radius: 9px;
   height: 40px;
 }
 strong {
   position: relative;
   left: 60px;
+  color: #af9393;
 }

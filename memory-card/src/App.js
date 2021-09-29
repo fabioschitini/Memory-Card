@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState } from "react";
 import Cards from './components/Cards'
 const App = () => {
   function shuffleArray(originalArray) {
@@ -22,95 +22,87 @@ let array = originalArray.slice(0)
   img:'http://img.skenko.com/images/anime/bvybhwbvybhw.jpg',
 },
   {
-  id: 'b',
+  id: 'On Fire!',
   img:'http://img.skenko.com/images/anime/oedvggoedvgg.jpg',
   },
   {
-  id: 'c',
+  id: 'Pale Girl',
   img:'http://img.skenko.com/images/anime/jlqinfjlqinf.jpg',
   },
   {
-  id: 'd',
+  id: 'Cats, am I right?',
   img:'http://img.skenko.com/images/anime/kbpvbikbpvbi.jpg',
   },
   {
-  id: 'e',
+  id: 'Chilling',
   img:'http://img.skenko.com/images/anime/wfyijwwfyijw.jpg',
   },
   {
-  id: 'f',
+  id: 'Silver',
   img:'http://img.skenko.com/images/anime/eydtdpeydtdp.jpg',
   },
   {
-  id: 'g',
+  id: 'Peace',
   img:'http://img.skenko.com/images/anime/qpwetuqpwetu.jpg',
   },
   {
-  id: 'h',
+  id: 'Deliberation',
   img:'http://img.skenko.com/images/anime/atyoliatyoli.jpg',
   },
   {
-  id: 'i',
+  id: 'Love',
   img:'http://img.skenko.com/images/anime/lpolyrlpolyr.jpg',
   },
   {
-  id: 'j',
+  id: 'Pretty boy',
   img:'http://img.skenko.com/images/anime/utvaofutvaof.jpg',
   },
   {
-  id: 'k',
+  id: 'Weeb',
   img:'http://img.skenko.com/images/anime/arpheiarphei.jpg',
   },
   {
-  id: 'l',
+  id: 'Frankenstein',
   img:'http://img.skenko.com/images/anime/bqarvubqarvu.jpg',
   }
   
   ])
  
-  const randonClick = (e) => {
-      console.log(e)
-      setCards(shuffleArray(cards))
-
-    };
+  
     
-useEffect(() => {
+
   const randonClick = (e) => {
-console.log(e.path)
-    if (e.path[1].attributes[0].value === 'true') {
+
+    let value = e.target.parentNode.attributes[0].nodeValue
+    console.log(e.target.parentNode.parentNode.childNodes[0].attributes[0].nodeValue)
+console.log(e.target.parentNode.attributes)
+    if (value === 'true') {
       setBestScore(bestScore.concat(score))
       setScore(0)
       setCards(shuffleArray(cards))
-      e.path[2].childNodes[0].attributes[0].value='false'
-      e.path[2].childNodes[1].attributes[0].value='false'
-      e.path[2].childNodes[2].attributes[0].value='false'
-      e.path[2].childNodes[3].attributes[0].value='false'
-      e.path[2].childNodes[4].attributes[0].value='false'
-      e.path[2].childNodes[5].attributes[0].value='false'
-      e.path[2].childNodes[6].attributes[0].value='false'
-      e.path[2].childNodes[7].attributes[0].value='false'
-      e.path[2].childNodes[8].attributes[0].value='false'
-      e.path[2].childNodes[9].attributes[0].value='false'
-      e.path[2].childNodes[10].attributes[0].value='false'
-      e.path[2].childNodes[11].attributes[0].value='false'
+      e.target.parentNode.parentNode.childNodes[0].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[1].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[2].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[3].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[4].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[5].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[6].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[7].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[8].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[9].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[10].attributes[0].nodeValue = 'false'
+      e.target.parentNode.parentNode.childNodes[11].attributes[0].nodeValue = 'false'
     }
     else {
-      console.log(e.path[1].attributes[0].value)
-      e.path[1].attributes[0].value = (e.path[1].attributes[0].value === 'false')
-      console.log(e.path[1].attributes[0].value)
+      e.target.parentNode.attributes[0].nodeValue = 'true'
       
       setScore(score + 1)
       setCards(shuffleArray(cards))
 
     }
-  };
+  
+  }
     
-    document.addEventListener("click", randonClick);
-
-    return () => {
-      document.removeEventListener("click", randonClick);
-    };
-  });
     
   
   return (<div>
@@ -123,7 +115,7 @@ console.log(e.path)
 </div>
   
     <div  id='container'>
-      <Cards randon={randonClick} cards={cards }/>
+      <Cards setScore={setScore} randon={randonClick} cards={cards }/>
     </div>
     </div>
   );
