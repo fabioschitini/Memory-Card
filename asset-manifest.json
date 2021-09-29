@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Memory-Card/static/css/main.fb3150a7.chunk.css",
+    "main.js": "/Memory-Card/static/js/main.cb0ca768.chunk.js",
+    "main.js.map": "/Memory-Card/static/js/main.cb0ca768.chunk.js.map",
+    "runtime-main.js": "/Memory-Card/static/js/runtime-main.3363f011.js",
+    "runtime-main.js.map": "/Memory-Card/static/js/runtime-main.3363f011.js.map",
+    "static/js/2.2bec215f.chunk.js": "/Memory-Card/static/js/2.2bec215f.chunk.js",
+    "static/js/2.2bec215f.chunk.js.map": "/Memory-Card/static/js/2.2bec215f.chunk.js.map",
+    "index.html": "/Memory-Card/index.html",
+    "static/css/main.fb3150a7.chunk.css.map": "/Memory-Card/static/css/main.fb3150a7.chunk.css.map",
+    "static/js/2.2bec215f.chunk.js.LICENSE.txt": "/Memory-Card/static/js/2.2bec215f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Memory-Card/static/media/girl.64e1a9fa.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3363f011.js",
+    "static/js/2.2bec215f.chunk.js",
+    "static/css/main.fb3150a7.chunk.css",
+    "static/js/main.cb0ca768.chunk.js"
+  ]
+}
