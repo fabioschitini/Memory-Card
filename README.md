@@ -1,12 +1,13 @@
+
+
+
 # Memory-Card
+
 Creating a memory card using React
 
 
-A simple shopping cart application.From The Odin Project's curriculum:
-
-## Feature
-* Add and remove products from the shopping cart
-* A sho page and a Cart page
+A React based web app which simluates a memory game: Get points for choosing a card, but don't choose the same card twice!
+From The Odin Project's curriculum:
 https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card
 
 link Live preview:https://fabioschitini.github.io/Memory-Card/
@@ -29,18 +30,17 @@ link Live preview:https://fabioschitini.github.io/Memory-Card/
 * ESLint + Airbnb JavaScript Style Guide
 * Node Libraries
 * WebPack
-* React Router
 
 # Outcome
 * Used Git and GitHub for project management.
 * Tried to maintain clean code.
-* Use Routes to link to others page in the website
 
 # Summary
 
 ## What I learned
 
-* Learnd how to use Routers on React
+* Increased my knowledge of react hooks
+
 
 ## Author
 
